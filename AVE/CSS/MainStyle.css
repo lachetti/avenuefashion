@@ -1,0 +1,207 @@
+body {
+	color: #575153;
+	font: 13px arial, sans-serif;
+	background-color: #ffffff;
+	margin: 0;
+}
+
+/* top - bar ===================================================================*/
+
+.topbar {
+	background-color: #333333;
+	height: 45px;
+	color: #898989;
+	font: 16px arial, sans-serif;
+	display: block;
+}
+.topbar a {
+	text-decoration: none;
+	color: #898989;
+}
+#curr {
+	display: inline-block;
+	padding: 12px 12px 12px 12px;
+	margin: 0 30% 0 25%;
+	float: left;
+}
+#consumer {
+	display: inline-block;
+	padding: 12px;
+	margin: 0;
+	
+}
+#cart {
+	display: inline-block;
+	padding: 12px 12px 12px 12px;
+	margin: 0 0 0 2%;
+	
+	/* the folowing atributes for active button */
+	color: #ffffff;
+	background-color: #00c8c8;
+}
+#cart a {
+	color: inherit;
+}
+.topbar.active {
+	color: #ffffff;
+	background-color: #00c8c8;
+}
+/* end of top - bar ============================================== */
+
+/* header =========================================================*/
+header {
+	/*background-color: #f8f8f8;
+	background-image: url(../Images/header/bg_header.jpg);*/
+	background-size: cover;
+	width: 100%;
+	height: 800px;
+	padding: 0px 0px;
+	display: block;
+    }
+.slider {
+	background-color: #f8f8f8;
+	width: 100%;
+	height: 800px;
+	position: absolute;
+	z-index: -1;
+}
+.slider img {
+	height: 100%;
+	display:block;
+	margin:auto;
+}
+.tophead {
+	display: block;
+	height: 100px;
+}
+#logo {
+	display: inline-block;
+	margin: 48px 0 0 5%;
+	float: left;
+}
+nav {
+	display: inline-block;
+	float: right;
+	margin-top: 40px;
+}
+nav a {
+	text-decoration: none;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+.menu li {
+	list-style-position: inside;
+	font: bold 13px arial, sans-serif;
+	display: inline-block;
+	padding: 8px 20px;
+	margin: 0;
+}
+.menu li.active {
+	color: #00c8c8;
+}
+.menu a {
+	color: #575153;
+}
+form[name="search"] {
+	margin: 40px 5% 0 5%;
+	font: 13px arial, sans-serif;
+	float: right;
+}
+.ssearch {
+	width: 10%;
+	margin: 40px 5% 0 5%;
+	float: right;
+	position: relative;
+}
+.ssearch input {
+	border-color: 1px solid #e7e7e7;
+	padding-top: 4px;
+	padding-bottom: 3px;
+	padding-left: 4px;
+}
+.sspace {
+	width: 100%;
+}
+.ssubmit {
+	position: absolute;
+	border: none;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 30px;
+	background: url(../Images/header/search-submit.png) 50% no-repeat;
+}
+.midhead {
+	display: block;
+	height: 600px;
+}
+.logo-header {
+	padding-top: 84px;
+	text-align: center;
+	font: bold 382px arial, sans-serif;
+}
+#h-button a {
+	text-decoration: none;
+	color: #575153;
+}
+#h-button {
+	display: block;
+	font: bold 24px arial, sans-serif;
+	border: 2px solid #575153;
+	padding: 11px 16px 11px 16px;
+	width: 312px;
+	float: right;
+	margin-right: 15%;
+	
+}
+/* end of header ===================================================*/
+
+/* slider ==========================================================*/
+/* i failed it and i will return to this later */
+/* end of slider ===================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
