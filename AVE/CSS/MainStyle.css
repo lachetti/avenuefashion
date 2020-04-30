@@ -3,6 +3,7 @@ body {
 	font: 13px arial, sans-serif;
 	background-color: #ffffff;
 	margin: 0;
+	height: 2000px;
 }
 
 /* top - bar ===================================================================*/
@@ -28,7 +29,6 @@ body {
 	display: inline-block;
 	padding: 12px;
 	margin: 0;
-	
 }
 #cart {
 	display: inline-block;
@@ -42,21 +42,15 @@ body {
 #cart a {
 	color: inherit;
 }
-.topbar.active {
-	color: #ffffff;
-	background-color: #00c8c8;
-}
 /* end of top - bar ============================================== */
 
 /* header =========================================================*/
 header {
-	/*background-color: #f8f8f8;
-	background-image: url(../Images/header/bg_header.jpg);*/
-	background-size: cover;
 	width: 100%;
 	height: 800px;
 	padding: 0px 0px;
 	display: block;
+	margin-bottom: 40px;
     }
 .slider {
 	background-color: #f8f8f8;
@@ -67,8 +61,8 @@ header {
 }
 .slider img {
 	height: 100%;
-	display:block;
-	margin:auto;
+	display: block;
+	margin: 0 auto;
 }
 .tophead {
 	display: block;
@@ -97,9 +91,6 @@ nav ul {
 	display: inline-block;
 	padding: 8px 20px;
 	margin: 0;
-}
-.menu li.active {
-	color: #00c8c8;
 }
 .menu a {
 	color: #575153;
@@ -136,11 +127,14 @@ form[name="search"] {
 .midhead {
 	display: block;
 	height: 600px;
+	width: 100%;
 }
 .logo-header {
+	width: 100%;
 	padding-top: 84px;
 	text-align: center;
 	font: bold 382px arial, sans-serif;
+	letter-spacing: 50px;
 }
 #h-button a {
 	text-decoration: none;
@@ -157,10 +151,250 @@ form[name="search"] {
 	
 }
 /* end of header ===================================================*/
+.items {
+	width: 1200px;
+	height: 900px;
+	margin: 0 auto;
+}
+.inav {
+	width: 100%;
+	display: inline-block;
+	float: left;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+.inav a {
+	text-decoration: none;
+}
+.inav ul {
+	margin: 0;
+	padding: 0;
+}
 
-/* slider ==========================================================*/
-/* i failed it and i will return to this later */
-/* end of slider ===================================================*/
+.itembox {
+	width: 100%;
+	height: 800px;
+	margin: 40px auto;
+	
+	display: flex;
+	flex-direction: row;	/* flex-block direction*/
+	flex-wrap: wrap;		/* drag an flex item to new row or no */
+	justify-content: center; 
+	/*over here i can use: flex-start | flex-end | center | space-between | space-around | space-evenly */
+	/*align-items: flex-start; /* like a "justify-content" but for a cross-direction*/ 
+}
+#itemleft {
+	order: 1;
+	flex-basis: 50%;
+	height: 100%;
+	
+	display: flex;
+	flex-direction: row;	/* flex-block direction*/
+	flex-wrap: wrap;		/* drag an flex item to new row or no */
+	justify-content: space-around; 
+	align-content: space-around;
+}
+#itemright {
+	order: 2;
+	flex-basis: 50%;
+	height: 100%;
+	
+	display: flex;
+	flex-direction: row;	/* flex-block direction*/
+	flex-wrap: wrap;		/* drag an flex item to new row or no */
+	justify-content: space-around; 
+	align-content: space-around;
+}
+
+.itembox img {
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+.itembox span {
+	font: 24px arial, sans-serif;
+	color: #575153;
+	position: absolute;
+	top: 0;
+	left: 5px;
+}
+
+#item1 {
+	background-color: #f8f8f8;
+	order: 1;
+	flex-basis: 48%;
+	height: 39%;
+	position: relative;
+}
+#item2 {
+	background-color: #f8f8f8;
+	order: 2;
+	flex-basis: 48%;
+	height: 39%;
+	position: relative;
+}
+#item3 {
+	background-color: #f8f8f8;
+	order: 3;
+	flex-basis: 98%;
+	height: 58%;
+	position: relative;
+}
+#item4 {
+	background-color: #f8f8f8;
+	order: 1;
+	flex-basis: 98%;
+	height: 58%;
+	position: relative;
+}
+#item5 {
+	background-color: #f8f8f8;
+	order: 2;
+	flex-basis: 48%;
+	height: 39%;
+	position: relative;
+}
+#item6 {
+	background-color: #f8f8f8;
+	order: 3;
+	flex-basis: 48%;
+	height: 39%;
+	position: relative;
+}
+
+.lookbook {
+	height: 320px;
+	width: 1200px;
+	margin: 40px auto;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between; 
+}
+.lookbook img {
+	height: 100%;
+	display: block;
+	margin: auto 0;
+}
+.lookbookbox {
+	background-color: #f8f8f8;
+	flex-basis: 33%;
+	height: 100%;
+	position: relative;
+}
+.lookbookbox a {
+	text-decoration: none;
+	color: #575153;
+	font: bold 14px arial, sans-serif;
+}
+.lookbooktext {
+	text-align: right;
+	font: 13px arial, sans-serif;
+	color: #575153;
+	
+	width: 50%;
+	height: 49%;
+	position: absolute;
+	top: 15%;
+	right: 5%;
+}
+#lbbutton {
+	text-align: center;
+	font: 16px arial, sans-serif;
+	color: #575153;
+	border: 2px solid #575153;
+	padding-top: 15px;
+	
+	width: 30%;
+	height: 10%;
+	position: absolute;
+	bottom: 15%;
+	right: 5%;
+}
+
+footer {
+	background-color: #f8f8f8;
+	width: 100%;
+	height: 500px;
+	margin-top: 40px;
+}
+.flexfooter {
+	width: 1000px;
+	height: 100%;
+	margin: auto;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between; 
+	align-content: space-evenly;
+}
+.footertextbox {
+	color: #575153;
+	font: 16px arial, sans-serif;
+	background-color: #f8f8f8;
+	flex-basis: 100%;
+	height: 40%;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between; 
+}
+.footertext {
+	flex-basis: 20%;
+	height: 100%;
+}
+.footertext h1 {
+	font: bold 16px arial, sans-serif;
+	margin: 0 0 20px 0;
+}
+.footertext a {
+	display: inline-block;
+	margin: 4px 0;
+	text-decoration: none;
+	color: #575153;
+}
+.footertext span {
+	display: inline-block;
+	margin: 4px 0 12px 0;
+	color: #575153;
+}
+.footerbutton {
+	background-color: #f8f8f8;
+	flex-basis: 49%;
+	margin: 1% 0 0 0;
+	
+	height: 40%;
+}
+.footerbutton img {
+	width: 100%;
+}
+
+.botbar {
+	background-color: #333333;
+	height: 30px;
+	display: block;
+	padding-right: 13%;
+	padding-left: 13%;
+	padding-top: 15px;
+}
+#botbarleft {
+	display: inline-block;
+	color: #898989;
+	font: 16px arial, sans-serif;
+	float: left;
+	margin: auto 0;
+}
+#botbarright {
+	display: inline-block;
+	color: #898989;
+	font: 16px arial, sans-serif;
+	float: right;
+	margin: auto 2%;
+}
+
 
 
 
