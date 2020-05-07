@@ -19,23 +19,39 @@ body {
 	text-decoration: none;
 	color: #898989;
 }
+.topbar a:hover {
+	color: #00c8c8;
+}
 #curr {
-	display: inline-block;
-	padding: 12px 12px 12px 12px;
+	padding: 12px 12px 15px 12px;
 	margin: 0 30% 0 25%;
 	float: left;
 }
+#curr:hover {
+	color: #ffffff;
+	background-color: #00c8c8;
+}
+#curr a {
+	color: inherit;
+}
 #consumer {
 	display: inline-block;
-	padding: 12px;
-	margin: 0;
+	padding: 12px 12px 15px 12px;
+	margin: 0;	
+}
+#consumer:hover {
+	color: #ffffff;
+	background-color: #00c8c8;
+}
+#consumer a {
+	color: inherit;
 }
 #cart {
 	display: inline-block;
-	padding: 12px 12px 12px 12px;
+	padding: 12px 12px 15px 12px;
 	margin: 0 0 0 2%;
-	
-	/* the folowing atributes for active button */
+}
+#cart:hover {
 	color: #ffffff;
 	background-color: #00c8c8;
 }
@@ -69,12 +85,10 @@ header {
 	height: 100px;
 }
 #logo {
-	display: inline-block;
 	margin: 48px 0 0 5%;
 	float: left;
 }
 nav {
-	display: inline-block;
 	float: right;
 	margin-top: 40px;
 }
@@ -86,11 +100,19 @@ nav ul {
 	padding: 0;
 }
 .menu li {
-	list-style-position: inside;
+	list-style-position: none;
 	font: bold 13px arial, sans-serif;
 	display: inline-block;
 	padding: 8px 20px;
 	margin: 0;
+	cursor: pointer;
+}
+.menu li a {
+	display: block;
+	text-decoration: none;
+}
+.menu li a:hover {
+	color: #00c8c8;
 }
 .menu a {
 	color: #575153;
@@ -136,11 +158,10 @@ form[name="search"] {
 	font: bold 382px arial, sans-serif;
 	letter-spacing: 50px;
 }
-#h-button a {
+#h-button {
 	text-decoration: none;
 	color: #575153;
-}
-#h-button {
+
 	display: block;
 	font: bold 24px arial, sans-serif;
 	border: 2px solid #575153;
@@ -148,7 +169,11 @@ form[name="search"] {
 	width: 312px;
 	float: right;
 	margin-right: 15%;
-	
+}
+#h-button:hover {
+	border: none;
+	color: #ffffff;
+	background-color: #00c8c8;
 }
 /* end of header ===================================================*/
 .items {
@@ -158,13 +183,15 @@ form[name="search"] {
 }
 .inav {
 	width: 100%;
-	display: inline-block;
 	float: left;
 	margin-top: 40px;
 	margin-bottom: 10px;
 }
 .inav a {
 	text-decoration: none;
+}
+.inav:hover {
+	color: #00c8c8;
 }
 .inav ul {
 	margin: 0;
@@ -299,7 +326,8 @@ form[name="search"] {
 	top: 15%;
 	right: 5%;
 }
-#lbbutton {
+.lbbutton {
+	display: block;
 	text-align: center;
 	font: 16px arial, sans-serif;
 	color: #575153;
@@ -311,6 +339,11 @@ form[name="search"] {
 	position: absolute;
 	bottom: 15%;
 	right: 5%;
+}
+.lbbutton:hover {
+	color: #ffffff;
+	background-color: #00c8c8;
+	border: none;
 }
 
 footer {
@@ -356,6 +389,9 @@ footer {
 	text-decoration: none;
 	color: #575153;
 }
+.footertext a:hover {
+	color: #00c8c8;
+}
 .footertext span {
 	display: inline-block;
 	margin: 4px 0 12px 0;
@@ -381,14 +417,12 @@ footer {
 	padding-top: 15px;
 }
 #botbarleft {
-	display: inline-block;
 	color: #898989;
 	font: 16px arial, sans-serif;
 	float: left;
 	margin: auto 0;
 }
 #botbarright {
-	display: inline-block;
 	color: #898989;
 	font: 16px arial, sans-serif;
 	float: right;
