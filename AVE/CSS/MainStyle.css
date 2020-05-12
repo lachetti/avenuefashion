@@ -268,8 +268,7 @@ form[name="search"] {
 	/*over here i can use: flex-start | flex-end | center | space-between | space-around | space-evenly */
 	/*align-items: flex-start; /* like a "justify-content" but for a cross-direction*/ 
 }
-#itemleft {
-	order: 1;
+.itemcol {
 	flex-basis: 50%;
 	height: 100%;
 	
@@ -279,18 +278,6 @@ form[name="search"] {
 	justify-content: space-around; 
 	align-content: space-around;
 }
-#itemright {
-	order: 2;
-	flex-basis: 50%;
-	height: 100%;
-	
-	display: flex;
-	flex-direction: row;	/* flex-block direction*/
-	flex-wrap: wrap;		/* drag an flex item to new row or no */
-	justify-content: space-around; 
-	align-content: space-around;
-}
-
 .itembox img {
 	height: 100%;
 	display: block;
@@ -303,50 +290,33 @@ form[name="search"] {
 	top: 0;
 	left: 5px;
 }
-
-#item1 {
+.item-small {
 	background-color: #f8f8f8;
 	order: 1;
 	flex-basis: 48%;
 	height: 39%;
 	position: relative;
 }
-#item2 {
-	background-color: #f8f8f8;
-	order: 2;
-	flex-basis: 48%;
-	height: 39%;
-	position: relative;
-}
-#item3 {
+.item-big {
 	background-color: #f8f8f8;
 	order: 3;
 	flex-basis: 98%;
 	height: 58%;
 	position: relative;
 }
-#item4 {
-	background-color: #f8f8f8;
-	order: 1;
-	flex-basis: 98%;
-	height: 58%;
-	position: relative;
+.item-info {
+	width: 100%;
+	height: 100%;
+	box-shadow: 0px 5px 30px #575153;
 }
-#item5 {
-	background-color: #f8f8f8;
-	order: 2;
-	flex-basis: 48%;
-	height: 39%;
-	position: relative;
+.item-small .item-info {
+	display: none;
+	position: absolute;
+	top: 0;
 }
-#item6 {
-	background-color: #f8f8f8;
-	order: 3;
-	flex-basis: 48%;
-	height: 39%;
-	position: relative;
+.item-small:hover .item-info {
+	display: inherit;
 }
-
 .lookbook {
 	height: 320px;
 	width: 1200px;
