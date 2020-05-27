@@ -5,44 +5,40 @@
 	<meta http-equip="Content_type" content="text/html; charset = utf-8">
 	<meta name="description" content="Wear - shop">
 	<meta name="keywords" content="Avenue wear">
-	<link rel="stylesheet" href="CSS/MainStyle.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" href="CSS/MainStyle.css"> -->
+	<!-- MEDIA QUERIES -->
+	<link rel="stylesheet" href="CSS/Adaptive_large.css" media="screen and (min-width: 1600px)">
+	<link rel="stylesheet" href="CSS/Adaptive_medium.css" media="screen and (min-width: 1200px) and (max-width: 1599px)">
 	<title>Avenue Fashion</title>
 </head>
 	<body>
 		<!-- Top bar -->
 		<div class="topbar">
-			<div id="curr">
-				Currency: <a href="">GBP &#x25bc;</a>
-			</div>
-			<div id="consumer">
-				<a href="">Sign In</a>
-			</div>
-			<div id="consumer">
-				<a href="">Register</a>
-			</div>
-			<div id="cart">
-				<a href="">empty &#x25bc;</a>
+			<div class="grid-width">
+				<div id="curr">
+					Currency: <a href="">GBP &#x25bc;</a>
+				</div>
+				<div id="consumer">
+					<a href="">Sign In</a>
+				</div>
+				<div id="consumer">
+					<a href="">Register</a>
+				</div>
+				<div id="cart">
+					<a href="">empty &#x25bc;</a>
+				</div>
 			</div>
 		</div>
 		<!-- The end of top bar -->
 		
 		<!-- Header -->
 		<header>
-			<div class="slider">
-				<img src="./Images/header/slider-man.jpg">
-			</div>
 			<div class="tophead">
-				<div id="logo">
-					<a href="G:\WebProgramming\AVE"><img src="./Images/logo/logo.png"></a>
-				</div>
-				<form name="ssearch" action="" method="get" autocomplete class="ssearch">
-					<input type="text" name="sspace" placeholder="Search..." class="sspace">
-					<input type="submit" name="ssubmit" value="" class="ssubmit">
-				</form>
-				<nav>
+				<div class="nav-header">
 					<ul>
 						<li>
-							<a href="">MENS<br>∨</a>
+							<a href="">MENS<br><span style="font: 17px arial, sans-serif;">∨</span></a>
 							<div class="nav-drop-down">
 								<div class="nav-flex">
 									<div class="nav-text">
@@ -68,7 +64,7 @@
 							</div>
 						</li>
 						<li>
-							<a href="">WOMENS<br>∨</a>
+							<a href="">WOMENS<br><span style="font: 17px arial, sans-serif;">∨</span></a>
 							<div class="nav-drop-down">
 								<div class="nav-flex">
 									<div class="nav-text">
@@ -101,14 +97,30 @@
 							<a href="">LOOK BOOK<br></a>
 						</li>
 					</ul>
-				</nav>
+				</div>
+				<div id="logo">
+					<a href=""><b>AVENUE </b> FASHION</a>
+					<!-- <a href="G:\WebProgramming\AVE"><img src="./Images/logo/logo.png"></a> -->
+				</div>
+				<form name="ssearch" action="" method="get" autocomplete class="ssearch">
+					<input type="text" name="sspace" placeholder="Search..." class="sspace">
+					<input type="submit" name="ssubmit" value="" class="ssubmit">
+				</form>
 			</div>
 			<div class="midhead">
 				<div class="logo-header">
-					A V E
+					<div class="header-letter">A</div>
+					<div class="header-letter">V</div>
+					<div class="header-letter">E</div>
 				</div>
 				<a id="h-button" href="/">SHOP MEN'S COLLECTION</a>
 			</div>
+			<div class="slider">
+				<div class="slide">
+					<img src="./Images/header/slider-man.jpg">
+				</div>
+			</div>
+			
 		</header>
 		<!-- End of header -->
 		
@@ -130,12 +142,51 @@
 						<img src="./Images/items/item1.jpg">
 						<span>&#163;89.99</span>
 						<div class="item-info">
-							
+							<div class="item-info-button">
+
+							</div>
+							<div class="item-info-preview">
+								<img src="./Images/items/item5-info-1.jpg">
+								<img src="./Images/items/item5-info-2.jpg">
+							</div>
+							<div class="item-info-menu">
+								<div class="itext">
+									<h1>the name of item</h1>
+									Some info about this item <br>
+									Some info about matherial
+								</div>
+								<div class="ibutton">
+									<img src="./Images/items/info-cart.png">
+									<img src="./Images/items/info-like.png">
+									<img src="./Images/items/info-size.png">
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="item-small" style="order: 2;">
 						<img src="./Images/items/item2.jpg">
 						<span>&#163;47.50</span>
+						<div class="item-info">
+							<div class="item-info-button">
+
+							</div>
+							<div class="item-info-preview">
+								<img src="./Images/items/item5-info-1.jpg">
+								<img src="./Images/items/item5-info-2.jpg">
+							</div>
+							<div class="item-info-menu">
+								<div class="itext">
+									<h1>the name of item</h1>
+									Some info about this item <br>
+									Some info about matherial
+								</div>
+								<div class="ibutton">
+									<img src="./Images/items/info-cart.png">
+									<img src="./Images/items/info-like.png">
+									<img src="./Images/items/info-size.png">
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="item-big" style="order: 3;">
 						<img src="./Images/items/item3.jpg">
@@ -150,10 +201,52 @@
 					<div class="item-small" style="order: 2;">
 						<img src="./Images/items/item5.jpg">
 						<span>&#163;29.95</span>
+						<div class="item-info">
+							<div class="item-info-button">
+
+							</div>
+							<div class="item-info-preview">
+								<img src="./Images/items/item5-info-1.jpg">
+								<img src="./Images/items/item5-info-2.jpg">
+							</div>
+							<div class="item-info-menu">
+								<div class="itext">
+									<h1>the name of item</h1>
+									Some info about this item <br>
+									Some info about matherial
+								</div>
+								<div class="ibutton">
+									<img src="./Images/items/info-cart.png">
+									<img src="./Images/items/info-like.png">
+									<img src="./Images/items/info-size.png">
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="item-small" style="order: 3;">
 						<img src="./Images/items/item6.jpg">
 						<span>&#163;34.79</span>
+						<div class="item-info">
+							<div class="item-info-button">
+
+							</div>
+							<div class="item-info-preview">
+								<img src="./Images/items/item5-info-1.jpg">
+								<img src="./Images/items/item5-info-2.jpg">
+							</div>
+							<div class="item-info-menu">
+								<div class="itext">
+									<h1>the name of item</h1>
+									Some info about this item <br>
+									Some info about matherial
+								</div>
+								<div class="ibutton">
+									<img src="./Images/items/info-cart.png">
+									<img src="./Images/items/info-like.png">
+									<img src="./Images/items/info-size.png">
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -250,10 +343,10 @@
 				<div class="footerbutton">
 					<img src="./Images/footer/social.jpg" usemap="#social">
 					<map name="social">
-						<area shape="rect" coords="100,60,160,110" href="" alt="facebook">
-						<area shape="rect" coords="175,60,235,110" href="" alt="twitter">
-						<area shape="rect" coords="250,60,310,110" href="" alt="instagram">
-						<area shape="rect" coords="325,60,385,110" href="" alp="pinterest">
+						<area shape="rect" coords="130,75,180,125" href="" alt="facebook">
+						<area shape="rect" coords="210,75,260,125" href="" alt="twitter">
+						<area shape="rect" coords="300,75,350,125" href="" alt="instagram">
+						<area shape="rect" coords="385,75,435,125" href="" alp="pinterest">
 					</map>
 				</div>
 			</div>
@@ -262,14 +355,16 @@
 		
 		<!-- Botbar -->
 		<div class="botbar">
-			<div id="botbarleft">
-				&#169; 2016 Avenue Fashion&#8482;
-			</div>
-			<div id="botbarright">
-				Desigh by RobbyDesignes.com
-			</div>
-			<div id="botbarright">
-				Dev by Lovemipsum.com
+			<div class="grid-width">
+				<div id="botbarleft">
+					&#169; 2016 Avenue Fashion&#8482;
+				</div>
+				<div id="botbarright">
+					Desigh by RobbyDesignes.com
+				</div>
+				<div id="botbarright">
+					Dev by Lovemipsum.com
+				</div>
 			</div>
 		</div>
 		<!-- End of botbar -->
