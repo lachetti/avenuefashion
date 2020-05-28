@@ -1,14 +1,10 @@
 /*
     COLUMN GRID:
-
-    Width: 2048
     Column: 70px
     Margin: 30px
-    Indent: 439px
-
 */
 
-/* Large: 1220px+ */
+/* Mobile: 400px - 839px */
 body {
 	color: #575153;
 	font: 13px arial, sans-serif;
@@ -17,7 +13,7 @@ body {
 }
 
 .grid-width {
-	width: 1170px;						/* SIZE */
+	width: 370px;						/* SIZE */
 	height: 100%;
 	margin: 0 auto;
 }
@@ -25,17 +21,17 @@ body {
 /* top - bar ===================================================================*/
 .topbar {
 	background-color: #333333;
-	height: 45px;
+	height: 30px;
 	color: #898989;
-	font: 16px arial, sans-serif;
+	font: 13px arial, sans-serif;
 }
 .topbar a {
 	text-decoration: none;
 	color: #898989;
 }
 #curr {
-	padding: 12px 12px 15px 12px;
-	margin: 0 680px 0 0;				/* SIZE */
+	padding: 7px 12px 8px 12px;
+	margin: 0 20px 0 0;				/* SIZE */
 	float: left;
 }
 #curr:hover {
@@ -47,7 +43,7 @@ body {
 }
 #consumer {
 	display: inline-block;
-	padding: 12px 12px 15px 12px;
+	padding: 7px 12px 8px 12px;
 }
 #consumer:hover {
 	color: #ffffff;
@@ -57,7 +53,7 @@ body {
 	color: inherit;
 }
 #cart {
-	padding: 12px 12px 15px 12px;
+	padding: 7px 12px 8px 12px;
 	float: right;
 }
 #cart:hover {
@@ -72,9 +68,9 @@ body {
 /* header =========================================================*/
 header {
 	width: 100%;
-	height: 900px;
+	height: 300px;
 	display: block;
-	margin: 0 0 40px 0;
+	margin: 0 0 20px 0;
 	position: relative;
     }
 .slider {
@@ -86,7 +82,7 @@ header {
 	top: 0;
 }
 .slide {
-	width: 1170px;
+	width: 370px;
 	height: 100%;
 	margin: 0 auto;
 }
@@ -96,7 +92,7 @@ header {
 	margin: 0;
 }
 .tophead {
-	width: 1170px;
+	width: 370px;
 	margin: 0 auto;
 
 	display: flex;
@@ -105,7 +101,7 @@ header {
 	justify-content: flex-end; 
 }
 #logo {
-	margin: 40px 110px 0 0;							/* SIZE */
+	margin: 20px 10px 0 0;							/* SIZE */
 	display: inline-block;
 	font: 24px arial, sans-serif;
 
@@ -120,7 +116,7 @@ form[name="search"] {
 }
 .ssearch {
 	width: 162px;
-	margin: 40px 8px 0 0;
+	margin: 20px 18px 0 0;
 	position: relative;
 
 	order: 2;
@@ -144,24 +140,24 @@ form[name="search"] {
 	background: url(../Images/header/search-submit.png) 50% no-repeat;
 }
 .nav-header {
-	margin: 40px 0 0 0;
-	width: 1170px;
-
+	margin: 20px 0 0 0;
+	width: 100%;
 	order: 3;
+	position: relative;
 }
 .nav-header ul {
-	margin: 0;
+	margin: 0 10px 0 0;
+	width: 198px;
 	float: right;
 	padding: 0;
 }
 .nav-header li {
 	list-style-position: none;
 	font: bold 13px arial, sans-serif;
-	display: inline-block;
+	display: block;
 	margin: 0 0 0 30px;
+	height: 36px;
 	cursor: pointer;
-	position: relative;
-	vertical-align: top;
 }
 .nav-header li a {
 	display: block;
@@ -174,7 +170,9 @@ form[name="search"] {
 .nav-header ul .nav-drop-down {
 	display: none;
 	position: absolute;
-	top: 100%;
+	z-index: 8;
+	top: 180px;
+	left: 0;
 }
 .nav-header ul li:hover > .nav-drop-down {
 	display: inherit;
@@ -182,12 +180,12 @@ form[name="search"] {
 .nav-drop-down {
 	background-color: #ffffff;
 	height: 480px;
-	width: 380px;
-	box-shadow: 0px 5px 30px #575153;
+	width: 370px;
 }
 .nav-flex {
 	width: 100%;
 	height: 100%;
+
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -204,7 +202,7 @@ form[name="search"] {
 .nav-text a {
 	display: inline-block;
 	font: 14px arial, sans-serif;
-	margin: 4px 0;
+	margin: 0;
 	text-decoration: none;
 	color: #575153;
 }
@@ -217,15 +215,14 @@ form[name="search"] {
 	height: 100%;
 }
 .midhead {
-	display: block;
-	height: 600px;
+	display: none;
 	width: 100%;
 }
 .logo-header {
 	width: 100%;
 	text-align: center;
-	font: bold 420px arial, sans-serif;
-	margin: 100px 0 40px 0;
+	font: bold 320px arial, sans-serif;
+	margin: 0;
 
 	display: flex;
 	flex-direction: row;	/* flex-block direction*/
@@ -253,14 +250,13 @@ form[name="search"] {
 
 /* items ===========================================================*/
 .items {
-	width: 1170px;
-	height: 900px;
+	width: 370px;
 	margin: 0 auto;
 }
 .inav {
 	width: 100%;
 	float: left;
-	margin: 40px 0 10px 0;
+	margin: 10px 0 10px 0;
 }
 .inav a {
 	text-decoration: none;
@@ -274,10 +270,9 @@ form[name="search"] {
 .inav li {
 	list-style-position: none;
 	font: bold 13px arial, sans-serif;
-	display: inline-block;
+	display: block;
 	margin: 0 20px;
 	cursor: pointer;
-	vertical-align: top;
 }
 .inav li a {
 	display: block;
@@ -290,8 +285,7 @@ form[name="search"] {
 
 .itembox {
 	width: 100%;
-	height: 800px;
-	margin: 40px auto;
+	margin: 20px auto;
 	
 	display: flex;
 	flex-direction: row;	/* flex-block direction*/
@@ -301,8 +295,9 @@ form[name="search"] {
 	/*align-items: flex-start; /* like a "justify-content" but for a cross-direction*/ 
 }
 .itemcol {
-	flex-basis: 50%;
+	flex-basis: 370px;
 	height: 100%;
+	margin: 4px;
 	
 	display: flex;
 	flex-direction: row;	/* flex-block direction*/
@@ -311,9 +306,10 @@ form[name="search"] {
 	align-content: space-around;
 }
 .itembox img {
-	height: 100%;
+	height: 320px;
 	display: block;
 	margin: 0 auto;
+	max-width: 100%;
 }
 .itembox span {
 	font: 24px arial, sans-serif;
@@ -324,17 +320,17 @@ form[name="search"] {
 }
 .item-small {
 	background-color: #f8f8f8;
-	order: 1;
-	flex-basis: 48%;
+	width: 362px;
 	height: 320px;
 	position: relative;
+	margin: 4px;
 }
 .item-big {
 	background-color: #f8f8f8;
-	order: 3;
-	flex-basis: 98%;
-	height: 450px;
+	width: 362px;
+	height: 320px;
 	position: relative;
+	margin: 4px;
 }
 .item-info {
 	width: 100%;
@@ -411,11 +407,11 @@ form[name="search"] {
 	width: 75%;
 }
 /* end of items ====================================================*/
+
 /* lookbook ========================================================*/
 .lookbook {
-	height: 320px;
 	width: 100%;
-	margin: 40px auto;
+	margin: 20px auto;
 	
 	display: flex;
 	flex-direction: row;
@@ -429,8 +425,8 @@ form[name="search"] {
 }
 .lookbookbox {
 	background-color: #f8f8f8;
-	flex-basis: 33%;
-	height: 100%;
+	flex-basis: 370px;
+	height: 320px;
 	position: relative;
 }
 .lookbookbox a {
@@ -440,7 +436,7 @@ form[name="search"] {
 }
 .lookbooktext {
 	text-align: right;
-	font: 13px arial, sans-serif;
+	font: 12px arial, sans-serif;
 	color: #575153;
 	
 	width: 50%;
@@ -448,6 +444,14 @@ form[name="search"] {
 	position: absolute;
 	top: 15%;
 	right: 5%;
+}
+.lookbooktext .b {
+	display: inline-block;
+	font: bold 22px arial, sans-serif;
+}
+.lookbooktext .nb {
+	display: inline-block;
+	font: 22px arial, sans-serif;
 }
 .lbbutton {
 	display: block;
@@ -460,7 +464,7 @@ form[name="search"] {
 	width: 30%;
 	height: 10%;
 	position: absolute;
-	bottom: 15%;
+	bottom: 10%;
 	right: 5%;
 }
 .lbbutton:hover {
@@ -474,12 +478,10 @@ form[name="search"] {
 footer {
 	background-color: #f8f8f8;
 	width: 100%;
-	height: 500px;
-	margin-top: 40px;
+	margin: 20px 0;
 }
 .flexfooter {
-	width: 1170px;
-	height: 100%;
+	width: 370px;
 	margin: auto;
 	
 	display: flex;
@@ -490,19 +492,19 @@ footer {
 }
 .footertextbox {
 	color: #575153;
-	font: 16px arial, sans-serif;
+	font: 13px arial, sans-serif;
 	background-color: #f8f8f8;
 	flex-basis: 100%;
 	height: 40%;
 	
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: space-between; 
 }
 .footertext {
-	flex-basis: 20%;
-	height: 100%;
+	flex-basis: 50%;
+	margin: 10px auto;
 }
 .footertext h1 {
 	font: bold 16px arial, sans-serif;
@@ -537,18 +539,17 @@ footer {
 /* botbar ==========================================================*/
 .botbar {
 	background-color: #333333;
-	height: 45px;
+	height: 80px;
 	display: block;
+	font: 13px arial, sans-serif;
 }
 #botbarleft {
 	color: #898989;
-	font: 16px arial, sans-serif;
 	float: left;
 	margin: 15px 0 0 0;
 }
 #botbarright {
 	color: #898989;
-	font: 16px arial, sans-serif;
 	float: right;
 	margin: 15px 0 0 30px;
 }
