@@ -445,6 +445,14 @@ form[name="search"] {
 	top: 15%;
 	right: 5%;
 }
+.lookbooktext .b {
+	display: inline-block;
+	font: bold 32px arial, sans-serif;
+}
+.lookbooktext .nb {
+	display: inline-block;
+	font: 32px arial, sans-serif;
+}
 .lbbutton {
 	display: block;
 	text-align: center;
